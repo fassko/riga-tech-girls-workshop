@@ -31,72 +31,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tdj-1O-UjX">
-                                <rect key="frame" x="0.0" y="416" width="414" height="480"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="eur-flag" translatesAutoresizingMaskIntoConstraints="NO" id="G7A-Vc-MOD">
-                                        <rect key="frame" x="30" y="65" width="88" height="62"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="equals" translatesAutoresizingMaskIntoConstraints="NO" id="buW-bO-GSW">
-                                        <rect key="frame" x="60" y="149" width="26" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IDR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mx-TM-AJK">
-                                        <rect key="frame" x="126" y="65" width="249" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Indonesian Rupiah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXU-EN-2QI">
-                                        <rect key="frame" x="126" y="101" width="126" height="18"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="N6O-QQ-FxE">
-                                        <rect key="frame" x="126" y="139" width="278" height="43"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" red="0.93333333333333335" green="0.25098039215686274" blue="0.54509803921568623" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="480" id="L1S-Ob-v9q"/>
-                                </constraints>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="indonesia-flag" translatesAutoresizingMaskIntoConstraints="NO" id="b7E-gI-tFN">
-                                <rect key="frame" x="20" y="169" width="88" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IDR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNJ-sl-viK">
-                                <rect key="frame" x="116" y="169" width="249" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Indonesian Rupiah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLp-PX-HF7">
-                                <rect key="frame" x="116" y="204" width="126" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15136.72" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rf0-S6-pjG">
-                                <rect key="frame" x="116" y="240" width="278" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
-                                <connections>
-                                    <action selector="valueFromChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="T4l-Az-QuO"/>
-                                </connections>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcB-7N-AZb" userLabel="Convert Button">
                                 <rect key="frame" x="310" y="374" width="84" height="84"/>
                                 <constraints>
@@ -104,18 +38,111 @@
                                     <constraint firstAttribute="width" constant="84" id="nlt-Wy-1Ns"/>
                                 </constraints>
                                 <state key="normal" image="convert-button"/>
-                                <connections>
-                                    <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pEj-Wr-UIm"/>
-                                </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tdj-1O-UjX">
+                                <rect key="frame" x="0.0" y="416" width="414" height="480"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="eur-flag" translatesAutoresizingMaskIntoConstraints="NO" id="G7A-Vc-MOD">
+                                        <rect key="frame" x="20" y="30" width="88" height="62"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="8p5-rC-gpq"/>
+                                            <constraint firstAttribute="width" constant="88" id="uGD-HK-2nw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mx-TM-AJK">
+                                        <rect key="frame" x="116" y="30" width="53" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="6fT-Ne-AbP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="N6O-QQ-FxE">
+                                        <rect key="frame" x="116" y="96" width="278" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="oVB-ZV-LfE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="valueToChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Y4A-LA-RYs"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXU-EN-2QI">
+                                        <rect key="frame" x="116" y="68" width="32" height="18"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="equals" translatesAutoresizingMaskIntoConstraints="NO" id="buW-bO-GSW">
+                                        <rect key="frame" x="51" y="110" width="26" height="14"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.25098039215686274" blue="0.54509803921568623" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="GXU-EN-2QI" firstAttribute="top" secondItem="0Mx-TM-AJK" secondAttribute="bottom" constant="8" id="0Yf-fc-KqQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="N6O-QQ-FxE" secondAttribute="trailing" constant="20" id="86s-eW-28s"/>
+                                    <constraint firstItem="N6O-QQ-FxE" firstAttribute="top" secondItem="GXU-EN-2QI" secondAttribute="bottom" constant="10" id="Cgh-KL-GlL"/>
+                                    <constraint firstItem="buW-bO-GSW" firstAttribute="top" secondItem="G7A-Vc-MOD" secondAttribute="bottom" constant="18" id="EIg-7b-YvB"/>
+                                    <constraint firstAttribute="height" constant="480" id="L1S-Ob-v9q"/>
+                                    <constraint firstItem="buW-bO-GSW" firstAttribute="centerX" secondItem="G7A-Vc-MOD" secondAttribute="centerX" id="MdL-By-scb"/>
+                                    <constraint firstItem="G7A-Vc-MOD" firstAttribute="leading" secondItem="Tdj-1O-UjX" secondAttribute="leading" constant="20" id="btl-GX-Lak"/>
+                                    <constraint firstItem="GXU-EN-2QI" firstAttribute="leading" secondItem="G7A-Vc-MOD" secondAttribute="trailing" constant="8" id="eDt-dU-qpM"/>
+                                    <constraint firstItem="N6O-QQ-FxE" firstAttribute="leading" secondItem="buW-bO-GSW" secondAttribute="trailing" constant="39" id="ehY-Dv-NaC"/>
+                                    <constraint firstItem="G7A-Vc-MOD" firstAttribute="top" secondItem="Tdj-1O-UjX" secondAttribute="top" constant="30" id="j54-Uo-KQ3"/>
+                                    <constraint firstItem="0Mx-TM-AJK" firstAttribute="top" secondItem="Tdj-1O-UjX" secondAttribute="top" constant="30" id="xdJ-nw-1do"/>
+                                    <constraint firstItem="0Mx-TM-AJK" firstAttribute="leading" secondItem="G7A-Vc-MOD" secondAttribute="trailing" constant="8" id="zLT-Gx-SAk"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="indonesia-flag" translatesAutoresizingMaskIntoConstraints="NO" id="b7E-gI-tFN">
+                                <rect key="frame" x="20" y="170" width="88" height="62"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNJ-sl-viK">
+                                <rect key="frame" x="116" y="170" width="43.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="j43-aD-aC0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15136.72" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rf0-S6-pjG">
+                                <rect key="frame" x="116" y="236" width="278" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Z72-GE-iCQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="valueFromChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="T4l-Az-QuO"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indonesian Rupiah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLp-PX-HF7">
+                                <rect key="frame" x="116" y="208" width="126" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.082352941176470587" green="0.078431372549019607" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Rf0-S6-pjG" firstAttribute="top" secondItem="kLp-PX-HF7" secondAttribute="bottom" constant="10" id="10d-8o-iGd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mcB-7N-AZb" secondAttribute="trailing" constant="20" id="869-Xz-zDv"/>
                             <constraint firstItem="Tdj-1O-UjX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9N4-Vs-3oc"/>
+                            <constraint firstItem="b7E-gI-tFN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Aub-n7-Edu"/>
+                            <constraint firstItem="kLp-PX-HF7" firstAttribute="top" secondItem="lNJ-sl-viK" secondAttribute="bottom" constant="8" id="BQh-l4-qiL"/>
+                            <constraint firstItem="lNJ-sl-viK" firstAttribute="leading" secondItem="b7E-gI-tFN" secondAttribute="trailing" constant="8" id="Dpc-Ji-GGt"/>
+                            <constraint firstItem="kLp-PX-HF7" firstAttribute="leading" secondItem="b7E-gI-tFN" secondAttribute="trailing" constant="8" id="KIb-l1-Hu4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rf0-S6-pjG" secondAttribute="trailing" constant="20" id="KQQ-Fu-mjw"/>
+                            <constraint firstItem="b7E-gI-tFN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="O9q-Lx-3Eo"/>
                             <constraint firstItem="Tdj-1O-UjX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bMf-Sk-sv6"/>
                             <constraint firstAttribute="bottom" secondItem="Tdj-1O-UjX" secondAttribute="bottom" id="cnH-81-VOR"/>
                             <constraint firstItem="mcB-7N-AZb" firstAttribute="top" secondItem="Tdj-1O-UjX" secondAttribute="top" constant="-42" id="djJ-HE-dtF"/>
+                            <constraint firstItem="Rf0-S6-pjG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="hbt-Bc-qXj"/>
+                            <constraint firstItem="lNJ-sl-viK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="s5S-Rf-6e5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
   
+  // from value text label
   @IBOutlet weak var fromLabel: UITextField!
+  
+  // to value text label
   @IBOutlet weak var toLabel: UITextField!
   
-
   override func viewDidLoad() {
     super.viewDidLoad()
   }
@@ -24,20 +26,20 @@ class ViewController: UIViewController {
     fromLabel.becomeFirstResponder()
   }
   
-  @IBAction func convert(_ sender: Any) {
-    convert()
-  }
-  
   @IBAction func valueFromChanged(_ sender: Any) {
-    convert()
-  }
-  
-  func convert() {
     if let fromValue = Double(fromLabel.text!) {
       let eur = fromValue * 0.000066
       toLabel.text = eur.formattedStyle
     }
   }
+  
+  @IBAction func valueToChanged(_ sender: Any) {
+    if let toValue = Double(toLabel.text!) {
+      let idr = toValue * 15136.72
+      fromLabel.text = idr.formattedStyle
+    }
+  }
+  
 }
 
 extension Double {
