@@ -28,16 +28,24 @@ class ViewController: UIViewController {
   
   @IBAction func valueFromChanged(_ sender: Any) {
     if let fromValue = Double(fromLabel.text!) {
-      let eur = fromValue * 0.000066
+      let eur = convertFromIDRtoEUR(value: fromValue)
       toLabel.text = eur.formattedStyle
     }
   }
   
   @IBAction func valueToChanged(_ sender: Any) {
     if let toValue = Double(toLabel.text!) {
-      let idr = toValue * 15136.72
+      let idr = convertFromEURtoIDR(value: toValue)
       fromLabel.text = idr.formattedStyle
     }
+  }
+  
+  func convertFromIDRtoEUR(value: Double) -> Double {
+    value * 0.000066
+  }
+  
+  func convertFromEURtoIDR(value: Double) -> Double {
+    value * 15136.72
   }
   
 }
