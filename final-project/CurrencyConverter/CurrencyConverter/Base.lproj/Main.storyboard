@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wL3-Mx-JEY">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wL3-Mx-JEY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,6 +15,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="bUo-me-LcH">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="dark-purple"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZE7-6u-55t"/>
@@ -31,14 +33,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcB-7N-AZb" userLabel="Convert Button">
-                                <rect key="frame" x="310" y="374" width="84" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="VHa-8p-0Eg"/>
-                                    <constraint firstAttribute="width" constant="84" id="nlt-Wy-1Ns"/>
-                                </constraints>
-                                <state key="normal" image="convert-button"/>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tdj-1O-UjX">
                                 <rect key="frame" x="0.0" y="416" width="414" height="480"/>
                                 <subviews>
@@ -80,7 +74,7 @@
                                         <rect key="frame" x="51" y="110" width="26" height="14"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.93333333333333335" green="0.25098039215686274" blue="0.54509803921568623" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="light-purple"/>
                                 <constraints>
                                     <constraint firstItem="GXU-EN-2QI" firstAttribute="top" secondItem="0Mx-TM-AJK" secondAttribute="bottom" constant="8" id="0Yf-fc-KqQ"/>
                                     <constraint firstAttribute="trailing" secondItem="N6O-QQ-FxE" secondAttribute="trailing" constant="20" id="86s-eW-28s"/>
@@ -96,6 +90,14 @@
                                     <constraint firstItem="0Mx-TM-AJK" firstAttribute="leading" secondItem="G7A-Vc-MOD" secondAttribute="trailing" constant="8" id="zLT-Gx-SAk"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcB-7N-AZb" userLabel="Convert Button">
+                                <rect key="frame" x="310" y="374" width="84" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="VHa-8p-0Eg"/>
+                                    <constraint firstAttribute="width" constant="84" id="nlt-Wy-1Ns"/>
+                                </constraints>
+                                <state key="normal" image="convert-button"/>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="indonesia-flag" translatesAutoresizingMaskIntoConstraints="NO" id="b7E-gI-tFN">
                                 <rect key="frame" x="20" y="170" width="88" height="62"/>
                             </imageView>
@@ -127,7 +129,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.082352941176470587" green="0.078431372549019607" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="dark-purple"/>
                         <constraints>
                             <constraint firstItem="Rf0-S6-pjG" firstAttribute="top" secondItem="kLp-PX-HF7" secondAttribute="bottom" constant="10" id="10d-8o-iGd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mcB-7N-AZb" secondAttribute="trailing" constant="20" id="869-Xz-zDv"/>
@@ -162,5 +164,11 @@
         <image name="equals" width="26" height="14"/>
         <image name="eur-flag" width="88" height="62"/>
         <image name="indonesia-flag" width="88" height="62"/>
+        <namedColor name="dark-purple">
+            <color red="0.99994784589999997" green="1" blue="0.99987405539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="light-purple">
+            <color red="0.57760351899999995" green="0.1487327218" blue="0.45860922339999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
