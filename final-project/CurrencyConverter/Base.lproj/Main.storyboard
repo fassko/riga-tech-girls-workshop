@@ -36,7 +36,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="N6O-QQ-FxE">
-                                        <rect key="frame" x="116" y="96" width="278" height="50"/>
+                                        <rect key="frame" x="129" y="96" width="265" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="oVB-ZV-LfE"/>
@@ -54,7 +54,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="equals" translatesAutoresizingMaskIntoConstraints="NO" id="buW-bO-GSW">
-                                        <rect key="frame" x="51" y="110" width="26" height="14"/>
+                                        <rect key="frame" x="38" y="110" width="52" height="28"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="light-purple"/>
@@ -84,7 +84,7 @@
                                 <state key="normal" image="convert-button"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="indonesia-flag" translatesAutoresizingMaskIntoConstraints="NO" id="b7E-gI-tFN">
-                                <rect key="frame" x="20" y="144" width="88" height="62"/>
+                                <rect key="frame" x="20" y="144" width="88" height="124"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="88" id="7j5-ZA-R1e"/>
                                 </constraints>
