@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wL3-Mx-JEY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -8,23 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="o7g-Qh-3lO">
-            <objects>
-                <navigationController id="wL3-Mx-JEY" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="bUo-me-LcH">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="dark-purple"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZE7-6u-55t"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RIl-De-dDK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1278" y="75"/>
-        </scene>
         <!--Currency Converter-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -44,7 +27,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mx-TM-AJK">
-                                        <rect key="frame" x="116" y="30" width="53" height="30"/>
+                                        <rect key="frame" x="116" y="30" width="278" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="6fT-Ne-AbP"/>
                                         </constraints>
@@ -65,7 +48,7 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXU-EN-2QI">
-                                        <rect key="frame" x="116" y="68" width="32" height="18"/>
+                                        <rect key="frame" x="116" y="68" width="278" height="18"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -80,12 +63,14 @@
                                     <constraint firstAttribute="trailing" secondItem="N6O-QQ-FxE" secondAttribute="trailing" constant="20" id="86s-eW-28s"/>
                                     <constraint firstItem="N6O-QQ-FxE" firstAttribute="top" secondItem="GXU-EN-2QI" secondAttribute="bottom" constant="10" id="Cgh-KL-GlL"/>
                                     <constraint firstItem="buW-bO-GSW" firstAttribute="top" secondItem="G7A-Vc-MOD" secondAttribute="bottom" constant="18" id="EIg-7b-YvB"/>
+                                    <constraint firstAttribute="trailing" secondItem="GXU-EN-2QI" secondAttribute="trailing" constant="20" id="EpT-T9-TWT"/>
                                     <constraint firstAttribute="height" constant="480" id="L1S-Ob-v9q"/>
                                     <constraint firstItem="buW-bO-GSW" firstAttribute="centerX" secondItem="G7A-Vc-MOD" secondAttribute="centerX" id="MdL-By-scb"/>
                                     <constraint firstItem="G7A-Vc-MOD" firstAttribute="leading" secondItem="Tdj-1O-UjX" secondAttribute="leading" constant="20" id="btl-GX-Lak"/>
                                     <constraint firstItem="GXU-EN-2QI" firstAttribute="leading" secondItem="G7A-Vc-MOD" secondAttribute="trailing" constant="8" id="eDt-dU-qpM"/>
                                     <constraint firstItem="N6O-QQ-FxE" firstAttribute="leading" secondItem="buW-bO-GSW" secondAttribute="trailing" constant="39" id="ehY-Dv-NaC"/>
                                     <constraint firstItem="G7A-Vc-MOD" firstAttribute="top" secondItem="Tdj-1O-UjX" secondAttribute="top" constant="30" id="j54-Uo-KQ3"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Mx-TM-AJK" secondAttribute="trailing" constant="20" id="jBB-yD-Znm"/>
                                     <constraint firstItem="0Mx-TM-AJK" firstAttribute="top" secondItem="Tdj-1O-UjX" secondAttribute="top" constant="30" id="xdJ-nw-1do"/>
                                     <constraint firstItem="0Mx-TM-AJK" firstAttribute="leading" secondItem="G7A-Vc-MOD" secondAttribute="trailing" constant="8" id="zLT-Gx-SAk"/>
                                 </constraints>
@@ -99,10 +84,13 @@
                                 <state key="normal" image="convert-button"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="indonesia-flag" translatesAutoresizingMaskIntoConstraints="NO" id="b7E-gI-tFN">
-                                <rect key="frame" x="20" y="170" width="88" height="62"/>
+                                <rect key="frame" x="20" y="144" width="88" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="7j5-ZA-R1e"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNJ-sl-viK">
-                                <rect key="frame" x="116" y="170" width="43.5" height="30"/>
+                                <rect key="frame" x="116" y="144" width="278" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="j43-aD-aC0"/>
                                 </constraints>
@@ -111,7 +99,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15136.72" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rf0-S6-pjG">
-                                <rect key="frame" x="116" y="236" width="278" height="50"/>
+                                <rect key="frame" x="116" y="210" width="278" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Z72-GE-iCQ"/>
@@ -123,7 +111,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indonesian Rupiah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLp-PX-HF7">
-                                <rect key="frame" x="116" y="208" width="126" height="18"/>
+                                <rect key="frame" x="116" y="182" width="278" height="18"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -134,17 +122,19 @@
                             <constraint firstItem="Rf0-S6-pjG" firstAttribute="top" secondItem="kLp-PX-HF7" secondAttribute="bottom" constant="10" id="10d-8o-iGd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mcB-7N-AZb" secondAttribute="trailing" constant="20" id="869-Xz-zDv"/>
                             <constraint firstItem="Tdj-1O-UjX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9N4-Vs-3oc"/>
-                            <constraint firstItem="b7E-gI-tFN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Aub-n7-Edu"/>
+                            <constraint firstItem="b7E-gI-tFN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Aub-n7-Edu"/>
                             <constraint firstItem="kLp-PX-HF7" firstAttribute="top" secondItem="lNJ-sl-viK" secondAttribute="bottom" constant="8" id="BQh-l4-qiL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kLp-PX-HF7" secondAttribute="trailing" constant="20" id="Bga-Ut-4FK"/>
                             <constraint firstItem="lNJ-sl-viK" firstAttribute="leading" secondItem="b7E-gI-tFN" secondAttribute="trailing" constant="8" id="Dpc-Ji-GGt"/>
                             <constraint firstItem="kLp-PX-HF7" firstAttribute="leading" secondItem="b7E-gI-tFN" secondAttribute="trailing" constant="8" id="KIb-l1-Hu4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rf0-S6-pjG" secondAttribute="trailing" constant="20" id="KQQ-Fu-mjw"/>
                             <constraint firstItem="b7E-gI-tFN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="O9q-Lx-3Eo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lNJ-sl-viK" secondAttribute="trailing" constant="20" id="Tq2-Om-NTI"/>
                             <constraint firstItem="Tdj-1O-UjX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bMf-Sk-sv6"/>
                             <constraint firstAttribute="bottom" secondItem="Tdj-1O-UjX" secondAttribute="bottom" id="cnH-81-VOR"/>
                             <constraint firstItem="mcB-7N-AZb" firstAttribute="top" secondItem="Tdj-1O-UjX" secondAttribute="top" constant="-42" id="djJ-HE-dtF"/>
                             <constraint firstItem="Rf0-S6-pjG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="hbt-Bc-qXj"/>
-                            <constraint firstItem="lNJ-sl-viK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="s5S-Rf-6e5"/>
+                            <constraint firstItem="lNJ-sl-viK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="s5S-Rf-6e5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -165,10 +155,10 @@
         <image name="eur-flag" width="88" height="62"/>
         <image name="indonesia-flag" width="88" height="62"/>
         <namedColor name="dark-purple">
-            <color red="0.99994784589999997" green="1" blue="0.99987405539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="light-purple">
-            <color red="0.57760351899999995" green="0.1487327218" blue="0.45860922339999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.57647058823529407" green="0.14509803921568629" blue="0.45490196078431372" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

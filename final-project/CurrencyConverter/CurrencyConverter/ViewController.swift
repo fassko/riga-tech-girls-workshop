@@ -29,14 +29,17 @@ class ViewController: UIViewController {
   @IBAction func valueFromChanged(_ sender: Any) {
     if let fromValue = Double(fromLabel.text!) {
       let eur = convertFromIDRtoEUR(value: fromValue)
-      toLabel.text = eur.formattedStyle
+      let formattedValue = formatNumber(value: eur)
+      toLabel.text = formattedValue
     }
   }
   
+  // Extra
   @IBAction func valueToChanged(_ sender: Any) {
     if let toValue = Double(toLabel.text!) {
       let idr = convertFromEURtoIDR(value: toValue)
-      fromLabel.text = idr.formattedStyle
+      let formattedValue = formatNumber(value: idr)
+      fromLabel.text = formattedValue
     }
   }
   
@@ -48,17 +51,14 @@ class ViewController: UIViewController {
     value * 15136.72
   }
   
-}
-
-extension Double {
-  var formattedStyle: String? {
+  func formatNumber(value: Double) -> String? {
     let formatter = NumberFormatter()
     formatter.locale = NSLocale(localeIdentifier: "en_US") as Locale
     formatter.minimumFractionDigits = 2
     formatter.maximumFractionDigits = 2
     formatter.numberStyle = .decimal
     
-    guard let result = formatter.string(from: NSNumber(value: self)) else {
+    guard let result = formatter.string(from: NSNumber(value: value)) else {
       return nil
     }
     
