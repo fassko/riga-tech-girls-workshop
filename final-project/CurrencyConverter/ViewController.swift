@@ -8,13 +8,14 @@
 
 import UIKit
 
+// In this file app has all the brains
 class ViewController: UIViewController {
   
-  // from value text label
-  @IBOutlet weak var fromLabel: UITextField!
+  // IDR currency value text field
+  @IBOutlet weak var idrTextField: UITextField!
   
-  // to value text label
-  @IBOutlet weak var toLabel: UITextField!
+  // EUR currency value text field
+  @IBOutlet weak var eurTextField: UITextField!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -23,45 +24,69 @@ class ViewController: UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     
-    fromLabel.becomeFirstResponder()
+    idrTextField.becomeFirstResponder()
   }
   
+  @IBAction func convertFromIDRtoEUR(_ sender: Any) {
+    if let idrValue = Float(idrTextField.text!) {
+      let eurValue = convertFromEURtoIDR(value: idrValue)
+      let formattedEurValue = formatNumber(value: eurValue)
+      eurTextField.text = formattedEurValue
+    }
+  }
+  
+  
   @IBAction func valueFromChanged(_ sender: Any) {
-    if let fromValue = Double(fromLabel.text!) {
+    if let fromValue = Float(idrTextField.text!) {
       let eur = convertFromIDRtoEUR(value: fromValue)
       let formattedValue = formatNumber(value: eur)
-      toLabel.text = formattedValue
+      eurTextField.text = formattedValue
     }
   }
   
   // Extra
   @IBAction func valueToChanged(_ sender: Any) {
-    if let toValue = Double(toLabel.text!) {
+    if let toValue = Float(eurTextField.text!) {
       let idr = convertFromEURtoIDR(value: toValue)
       let formattedValue = formatNumber(value: idr)
-      fromLabel.text = formattedValue
+      idrTextField.text = formattedValue
     }
   }
   
-  func convertFromIDRtoEUR(value: Double) -> Double {
+  // This function converts value from IDR to EUR
+  // Float is floating decimal number - 55.30444
+  func convertFromIDRtoEUR(value: Float) -> Float {
     value * 0.000066
   }
   
-  func convertFromEURtoIDR(value: Double) -> Double {
+  func convertFromEURtoIDR(value: Float) -> Float {
     value * 15136.72
   }
   
-  func formatNumber(value: Double) -> String? {
+  // we want to format something like 3445.8305 to 3445.83
+  // if can't format correctly then it will return nil
+  // nil stands for nothing
+  func formatNumber(value: Float) -> String? {
+    
+    // creating a number formatter
     let formatter = NumberFormatter()
-    formatter.locale = NSLocale(localeIdentifier: "en_US") as Locale
+    
+    // using US localization
+    formatter.locale = Locale(identifier: "en_US")
+    
+    // 1.00
+    // min and max digits after comma
     formatter.minimumFractionDigits = 2
     formatter.maximumFractionDigits = 2
+    
+    // decimal style
     formatter.numberStyle = .decimal
     
+    // formatting number to text
     guard let result = formatter.string(from: NSNumber(value: value)) else {
       return nil
     }
     
-    return String(result)
+    return result
   }
 }
