@@ -44,7 +44,7 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
-                                            <action selector="valueToChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Y4A-LA-RYs"/>
+                                            <action selector="valueEURChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Y4A-LA-RYs"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXU-EN-2QI">
@@ -110,7 +110,7 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
                                 <connections>
-                                    <action selector="valueFromChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="T4l-Az-QuO"/>
+                                    <action selector="valueIDRChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="T4l-Az-QuO"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indonesian Rupiah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLp-PX-HF7">

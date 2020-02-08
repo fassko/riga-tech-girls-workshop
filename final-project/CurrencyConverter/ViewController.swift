@@ -36,7 +36,7 @@ class ViewController: UIViewController {
   }
   
   
-  @IBAction func valueFromChanged(_ sender: Any) {
+  @IBAction func valueIDRChanged(_ sender: Any) {
     if let fromValue = Float(idrTextField.text!) {
       let eur = convertFromIDRtoEUR(value: fromValue)
       let formattedValue = formatNumber(value: eur)
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
   }
   
   // Extra
-  @IBAction func valueToChanged(_ sender: Any) {
+  @IBAction func valueEURChanged(_ sender: Any) {
     if let toValue = Float(eurTextField.text!) {
       let idr = convertFromEURtoIDR(value: toValue)
       let formattedValue = formatNumber(value: idr)
